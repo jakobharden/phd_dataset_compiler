@@ -1,3 +1,12 @@
+## Initialize dataset compiler, version 1.1
+##
+## Usage: init()
+##
+## The initialization is performing the following tasks:
+##  - set graphics toolkit
+##  - add subdirectories to the execution path
+##  - initialize/create databse files
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -12,6 +21,7 @@
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ##
+
 ## Select graphics toolkit
 ##graphics_toolkit("gnuplot");
 ##graphics_toolkit("fltk");

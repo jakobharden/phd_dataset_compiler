@@ -1,3 +1,16 @@
+## Create material data structure by given material id
+##
+## Usage 1: [r_ds, r_id] = struct_mat(p_id), return initialized data structure
+##
+## Usage 2: [r_ds, r_id] = struct_mat(), return empty data structure
+##
+## p_id ... material id's, <uint> or [<uint>]
+## r_ds ... return: material data structure(s), <struct> or [<struct>]
+##   fields: see ./struct_hdf/struct_make_matdb.m
+## r_id ... return: material id's, <uint>, [<uint>]
+##
+## see also: struct_make_matdb
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,19 +24,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Create material data structure by given material id
-##
-## Usage 1: [r_ds, r_id] = struct_mat(p_id), return initialized data structure
-##
-## Usage 2: [r_ds, r_id] = struct_mat(), return empty data structure
-##
-## p_id ... material id's, <uint> or [<uint>]
-## r_ds ... return: material data structure(s), <struct> or [<struct>]
-##   fields: see ./struct_hdf/struct_make_matdb.m
-## r_id ... return: material id's, <uint>, [<uint>]
-##
-## see also: struct_make_matdb
 ##
 function [r_ds, r_id] = struct_mat(p_id)
   

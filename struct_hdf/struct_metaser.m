@@ -1,3 +1,16 @@
+## Create test series metadata data structure
+##
+## Usage 1: [r_ds, r_id] = struct_metaser(p_id), return initialized data structure
+##
+## Usage 2: [r_ds, r_id] = struct_metaser(), return empty data structure
+##
+## p_id ... series id or series code, <uint> or <str>
+## r_ds ... return: test series metadata data structure, <struct>
+##   fields: see ./struct_hdf/struct_make_metaserdb.m
+## r_id ... return: test series id, <uint>
+##
+## see also: struct_make_metaserdb
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,19 +24,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Create test series metadata data structure
-##
-## Usage 1: [r_ds, r_id] = struct_metaser(p_id), return initialized data structure
-##
-## Usage 2: [r_ds, r_id] = struct_metaser(), return empty data structure
-##
-## p_id ... series id or series code, <uint> or <str>
-## r_ds ... return: test series metadata data structure, <struct>
-##   fields: see ./struct_hdf/struct_make_metaserdb.m
-## r_id ... return: test series id, <uint>
-##
-## see also: struct_make_metaserdb
 ##
 function [r_ds, r_id] = struct_metaser(p_id)
   

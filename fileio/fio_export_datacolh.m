@@ -1,3 +1,15 @@
+## Export data to CSV file and column heads to text file
+##
+## Usage: [r_fp_dat, r_fp_col] = fio_export_datacolh(p_fp, p_dat, p_col)
+##
+## p_fp  ... export file path without extension, <str>
+## p_dat ... number array, [[<float>]]
+## p_col ... column headers, {<str>}
+## r_fp_dat ... return file path to data CSV file, <str>
+## r_fp_col ... return file path to column headers text file, <str>
+##
+## see also: 
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,18 +23,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Export data to CSV file and column heads to text file
-##
-## Usage: anastat_run(p_cfg)
-##
-## p_fp  ... export file path without extension, <str>
-## p_dat ... number array, [[<float>]]
-## p_col ... column headers, {<str>}
-## r_fp_dat ... return file path to data CSV file, <str>
-## r_fp_col ... return file path to column headers text file, <str>
-##
-## see also: 
 ##
 function [r_fp_dat, r_fp_col] = fio_export_datacolh(p_fp, p_dat, p_col)
   

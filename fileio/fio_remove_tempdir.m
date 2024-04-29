@@ -1,3 +1,9 @@
+## Remove temporary project data directory from system temp directory
+##
+## p_tdp ... temporary project directory path (full qualified)
+##
+## see also: fio_unzip_tempdir
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,12 +17,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Remove temporary project data directory from system temp directory
-##
-## p_tdp ... temporary project directory path (full qualified)
-##
-## see also: fio_unzip_tempdir
 ##
 function fio_remove_tempdir(p_tdp)
   

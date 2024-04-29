@@ -1,3 +1,14 @@
+## Extract structure of dataset (GNU octave binary) as text
+##
+## Usage: [r_sl] = struct_exp_structure(p_fp, p_mo)
+##
+## p_fp  ... file path to data structure or data structure, <str> or <struct>
+## p_mo  ... mode, <str>
+##             'tagonly' ... print tag only (default)
+##             'all'     ... print all contents
+##
+## see also: struct_import
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,17 +22,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Extract structure of dataset (GNU octave binary) as text
-##
-## Usage: [r_sl] = struct_exp_structure(p_fp, p_mo)
-##
-## p_fp  ... file path to data structure or data structure, <str> or <struct>
-## p_mo  ... mode, <str>
-##             'tagonly' ... print tag only (default)
-##             'all'     ... print all contents
-##
-## see also: struct_import
 ##
 function [r_sl] = struct_exp_structure(p_fp, p_mo)
   

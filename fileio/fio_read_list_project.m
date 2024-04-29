@@ -1,3 +1,13 @@
+## Read list of project paths from file and return project directory structure array
+##
+## Usage: [r_sta, r_pds] = fio_read_list_project(p_lfp)
+##
+## p_lfp ... project list file path
+## r_sta ... return read state (true = success, false = failure)
+## r_pds ... return FreshCon project directory structure array
+##
+## see also: fio_read_project
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,16 +21,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Read list of project paths from file and return project directory structure array
-##
-## Usage: [r_sta, r_pds] = fio_read_list_project(p_lfp)
-##
-## p_lfp ... project list file path
-## r_sta ... return read state (true = success, false = failure)
-## r_pds ... return FreshCon project directory structure array
-##
-## see also: fio_read_project
 ##
 function [r_sta, r_pds] = fio_read_list_project(p_lfp)
   

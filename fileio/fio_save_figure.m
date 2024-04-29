@@ -1,3 +1,14 @@
+## Save figure to file
+##
+## Usage: [r_fs] = fio_save_figure(p_fh, p_fp, p_ff)
+##
+## p_fh ... figure handle
+## p_fp ... figure file path
+## p_ff ... figure file format
+## r_fs ... return file state (output of stat), empty if file does not exist
+##
+## see also: saveas, hgsave
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -12,16 +23,6 @@
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ##
-## Save figure to file
-##
-## Usage: [r_fs] = fio_save_figure(p_fh, p_fp, p_ff)
-##
-## p_fh ... figure handle
-## p_fp ... figure file path
-## p_ff ... figure file format
-## r_fs ... return file state (output of stat), empty if file does not exist
-##
-## see also: saveas, hgsave
 function [r_fs] = fio_save_figure(p_fh, p_fp, p_ff)
   
   ## init return value

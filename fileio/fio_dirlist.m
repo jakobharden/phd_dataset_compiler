@@ -1,3 +1,11 @@
+## Enlist binary project files in directory
+##
+## Usage: [r_lst] = fio_dirlist(p_dir, p_ext)
+##
+## p_dir ... project file directory
+## p_ext ... filter file extension
+## r_lst ... return project file listing
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,14 +19,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Enlist binary project files in directory
-##
-## Usage: [r_lst] = fio_dirlist(p_dir, p_ext)
-##
-## p_dir ... project file directory
-## p_ext ... filter file extension
-## r_lst ... return project file listing
 ##
 function [r_lst] = fio_dirlist(p_dir, p_ext)
   

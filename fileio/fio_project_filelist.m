@@ -1,3 +1,16 @@
+## Add copyright header to all data files of a upv project
+##
+## Usage: fio_project_filelist(p_pdp)
+##
+## p_pdp ... project directory path, <str>
+## r_pfl ... project file list, [<struct>]
+##   .obj_type ... object type, <str>, always 'struct_project_filelist'
+##   .dp ... directory path, <str>
+##   .fn ... file name, <str>
+##   .fp ... full file path, <str>
+##
+## see also: fio_read_project, fio_read_measurements
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,19 +24,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Add copyright header to all data files of a upv project
-##
-## Usage: fio_project_filelist(p_pdp)
-##
-## p_pdp ... project directory path, <str>
-## r_pfl ... project file list, [<struct>]
-##   .obj_type ... object type, <str>, always 'struct_project_filelist'
-##   .dp ... directory path, <str>
-##   .fn ... file name, <str>
-##   .fp ... full file path, <str>
-##
-## see also: fio_read_project, fio_read_measurements
 ##
 function [r_pfl] = fio_project_filelist(p_pdp)
   

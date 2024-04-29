@@ -1,3 +1,12 @@
+## Create sha256 hash files for all data files of a upv project
+##
+## Usage: fio_project_hash(p_pd)
+##
+## p_pdp ... project directory path, string
+##
+## see also: fio_read_project, fio_read_channel, fio_read_settings,
+##           fio_read_measurements, fio_read_temperature, fio_read_signal
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,15 +20,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Create sha256 hash files for all data files of a upv project
-##
-## Usage: fio_project_hash(p_pd)
-##
-## p_pdp ... project directory path, string
-##
-## see also: fio_read_project, fio_read_channel, fio_read_settings,
-##           fio_read_measurements, fio_read_temperature, fio_read_signal
 ##
 function fio_project_hash(p_pdp)
   

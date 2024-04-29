@@ -1,3 +1,10 @@
+## Decompress zip archive to directory
+##
+## p_zp ... archive file path (full qualified), <str>
+## r_dp ... return: decompressed directory path, <str>
+##
+## see also: fio_zip
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,13 +18,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Decompress zip archive to directory
-##
-## p_zp ... archive file path (full qualified), <str>
-## r_dp ... return: decompressed directory path, <str>
-##
-## see also: fio_zip
 ##
 function [r_dp] = fio_unzip(p_zp)
   

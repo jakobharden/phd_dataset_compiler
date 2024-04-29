@@ -1,3 +1,13 @@
+## Create sha256 hash string of given file
+## 
+## Usage: [r_hs] = fio_hash_sha256(p_fp)
+## 
+## p_fp ... full qualified file path, <str>
+## r_hs ... return: sha256 hash string (64 characters), <str>
+## r_hr ... return: sha256 hash string (raw sha256sum output), <str>
+## 
+## see also: 
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -12,16 +22,6 @@
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ##
-## Create sha256 hash string of given file
-## 
-## Usage: [r_hs] = fio_hash_sha256(p_fp)
-## 
-## p_fp ... full qualified file path, <str>
-## r_hs ... return: sha256 hash string (64 characters), <str>
-## r_hr ... return: sha256 hash string (raw sha256sum output), <str>
-## 
-## see also: 
-## 
 function [r_hs, r_hr] = fio_hash_sha256(p_fp)
   
   ## init return value

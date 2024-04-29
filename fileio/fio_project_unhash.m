@@ -1,3 +1,11 @@
+## Remove sha256 hash files from project directory
+##
+## Usage: fio_project_unhash(p_pd)
+##
+## p_pd ... project directory path, string
+##
+## see also: fio_project_hash
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,14 +19,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Remove sha256 hash files from project directory
-##
-## Usage: fio_project_unhash(p_pd)
-##
-## p_pd ... project directory path, string
-##
-## see also: fio_project_hash
 ##
 function fio_project_unhash(p_pd)
   

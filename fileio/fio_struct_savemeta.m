@@ -1,4 +1,16 @@
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
+## Extract metadata from project data structure and save metadata to JSON file
+##
+## Usage 1: [r_fp] = fio_struct_savemeta(p_src), read dataset from variable
+##
+## Usage 2: [r_fp] = fio_struct_savemeta(p_src), load dataset from file
+##
+## p_src ... project data structure or full qualified file path, <struct> or <str>
+## r_fp  ... return: file path to metadata file (JSON format), <str>
+##
+## see also: fio_struct_save, fio_struct_load
+##
+## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
 ## 
@@ -11,17 +23,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Extract metadata from project data structure and save metadata to JSON file
-##
-## Usage 1: [r_fp] = fio_struct_savemeta(p_src), read dataset from variable
-##
-## Usage 2: [r_fp] = fio_struct_savemeta(p_src), load dataset from file
-##
-## p_src ... project data structure or full qualified file path, <struct> or <str>
-## r_fp  ... return: file path to metadata file (JSON format), <str>
-##
-## see also: fio_struct_save, fio_struct_load
 ##
 function [r_fp] = fio_struct_savemeta(p_src)
   

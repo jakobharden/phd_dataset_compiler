@@ -1,3 +1,12 @@
+## Add header lines to text file
+##
+## Usage: fio_header_add(p_fp, p_hi)
+##
+## p_fp ... file path, <str>
+## p_hi ... header information, cell array of strings {<str>}
+##
+## see also: 
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,15 +20,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Add header lines to text file
-##
-## Usage: fio_header_add(p_fp, p_hi)
-##
-## p_fp ... file path, <str>
-## p_hi ... header information, cell array of strings {<str>}
-##
-## see also: 
 ##
 function fio_header_add(p_fp, p_hi)
   

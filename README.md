@@ -1,4 +1,4 @@
-# Dataset compiler
+# Dataset compiler, version 1.1
 
 This script collection allows to compile raw data from ultrasonic pulse transmission tests (FreshCon device) to datasets using the open GNU Octave binary file format.
 
@@ -10,11 +10,12 @@ Table of contents:
 - Usage instructions
 - Help
 - Related data sources
+- Revision and release history
 
 
 ## License
 
-All files published under the DOI 10.3217/6t7km-5dg82 are licensed under the MIT license.
+All files published under the DOI 10.3217/6qg3m-af058 are licensed under the MIT license.
 
 Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 License: MIT
@@ -54,6 +55,7 @@ Directory and file structure:
 - [struct_hdf/update] ... directory, function files used to update an already existing binary dataset (*.oct file).
 - [struct_hdf/*.m] ... function files used to create the substructures of a binary dataset (*.oct file).
 - init.m ... function file used to initialize the program.
+- README.md ... this file
 
 
 ## Installation instructions
@@ -75,9 +77,9 @@ Where **T** is the raw data source type, **S** the raw data source directory and
 
 Example:
 ```
-octave: >>> init;
-octave: >>> struct_import("paste", "/path/to/source/mydataset");
-octave: >>> ds = load("/path/to/source/mydataset.oct", "dataset").dataset;
+octave: >> init;
+octave: >> struct_import("paste", "/path/to/source/mydataset");
+octave: >> ds = load("/path/to/source/mydataset.oct", "dataset").dataset;
 ```
 In the example shown above, the raw data of an ultrasonic pulse transmission test on a cement paste is compiled to a binary dataset in "/path/to/source/mydataset.oct".
 
@@ -86,14 +88,14 @@ In the example shown above, the raw data of an ultrasonic pulse transmission tes
 
 All function files in this script collection contain a proper documentation and usage instructions. To access that help on the GNU Octave command line, type:
 ```
-octave: >>> init;
-octave: >>> help function_file_name;
+octave: >> init;
+octave: >> help function_file_name;
 ```
 
 
 ## Related data sources
 
-Datasets compiled with this scripts are made available at the repository of Graz University of Technology under an open license (Creative Commons, CC-BY-4.0). The repository records enlisted below contain the raw data, the compiled datasets and a technical description of the record content.
+Datasets compiled with this scripts are made available at the repository of Graz University of Technology under an open license (Creative Commons, CC BY 4.0). The repository records enlisted below contain the raw data, the compiled datasets and a technical description of the record content.
 
 Data sources:
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 1, Cement Paste at Early Stages". Graz University of Technology. doi: 10.3217/bhs4g-m3z76
@@ -102,4 +104,20 @@ Data sources:
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 5, Reference Tests on Air". Graz University of Technology. doi: 10.3217/bjkrj-pg829
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 6, Reference Tests on Water". Graz University of Technology. doi: 10.3217/hn7we-q7z09
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Graz University of Technology. doi: 10.3217/azh6e-rvy75
+
+
+## Revision and release history
+
+### 2023-07-14, version 1
+
+- published/released version 1 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; doi: 10.3217/6t7km-5dg82
+
+
+### 2023-08-06, version 1.1
+
+- Moved the copyright notice to the bottom of the function file documentation in all file headers. The license stays the same (MIT). This was done to stay aligned to GNU Octave function file documentation definitions (copyright notice goes after the function synopsis). Additionally, the help command (octave: >> help "function_file_name") is now parsing and displaying the function file documentation correctly.
+- No chages were made to the program logic.
+- Added a revision and release history to the README.md file.
+- Minor updates in the text of the README.md file.
+- published/released version 1.1 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; doi: 10.3217/6qg3m-af058
 

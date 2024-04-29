@@ -1,3 +1,13 @@
+## Unzip project zip file to ramdisk (faster file IO)
+##
+## Note: if the ramdisk directory /mnt/octave_temp does not exist, fall back to /tmp
+##
+## p_zip ... project zip file path (full qualified), <str>
+## r_sdp ... return: source project directory path (archive directory path), <str>
+## r_tdp ... return: temporary project directory path, <str>
+##
+## see also: fio_remove_tempdir
+##
 ## Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 ## License: MIT
 ## This file is part of the PhD thesis of Jakob Harden.
@@ -11,16 +21,6 @@
 ## THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE 
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-##
-## Unzip project zip file to ramdisk (faster file IO)
-##
-## Note: if the ramdisk directory /mnt/octave_temp does not exist, fall back to /tmp
-##
-## p_zip ... project zip file path (full qualified), <str>
-## r_sdp ... return: source project directory path (archive directory path), <str>
-## r_tdp ... return: temporary project directory path, <str>
-##
-## see also: fio_remove_tempdir
 ##
 function [r_sdp, r_tdp] = fio_unzip_tempdir(p_zip)
   
