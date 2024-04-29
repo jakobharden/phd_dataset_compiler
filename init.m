@@ -18,9 +18,9 @@
 graphics_toolkit("qt");
 
 ## Load additional packages
-pkg load signal;
-pkg load statistics;
-pkg load ltfat;
+##pkg load signal;
+##pkg load statistics;
+##pkg load ltfat;
 
 ## Add subdirectory paths
 subdirs = {...
@@ -30,13 +30,14 @@ subdirs = {...
   "struct_hdf/db", ...
   "struct_hdf/export", ...
   "struct_hdf/import", ...
+  "struct_hdf/update", ...
   "struct_hdf/plot"};
 for i = 1 : size(subdirs, 2)
   addpath(subdirs{i});
 endfor
 
 ## Clear global variables
-clearvars -global 'wavupv_*';
+clearvars -global 'dsc_*';
 
 ## Initialize global variables
 global dsc_dbpath_static = './struct_hdf/db/db_static.oct';

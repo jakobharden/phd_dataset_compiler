@@ -34,14 +34,14 @@
 function struct_make_static(p_ofp)
   
  ## read database file path from global variable, see also init.m
-  global dsc_dbpath_static
+  global wavupv_dbpath_static
   
   ## check arguments
   if (nargin < 1)
-    p_ofp = dsc_dbpath_static;
+    p_ofp = wavupv_dbpath_static;
   endif
   if isempty(p_ofp)
-    p_ofp = dsc_dbpath_static;
+    p_ofp = wavupv_dbpath_static;
   endif
   
   ## general definitions and defaults
@@ -354,7 +354,7 @@ function struct_make_static(p_ofp)
   struct_test_umd1.r03 = struct_objref('device', [], 'dev', 'device reference');
   struct_test_umd1.r04 = struct_objref('location', [], 'loc', 'location reference');
   struct_test_umd1.d01 = struct_objdata('datetime', 'double', [], 'utc', 'date and time, seconds since epoch (UTC)');
-  struct_test_umd1.d02 = struct_objdata('total_distance', 'double', [], 'mm', 'total distance, mesurement result');
+  struct_test_umd1.d02 = struct_objdata('total_distance', 'double', [], 'mm', 'total distance, measurement result');
   struct_test_umd1.d03 = struct_objdata('spacer_thickness', 'double', [], 'mm', 'thickness of spacer disks, steel washer, measurement result');
   struct_test_umd1.d04 = struct_objdata('specimen_thickness', 'double', [], 'mm', 'distance between actuator and sensor, calculated value');
   struct_test_umd1.a01 = struct_objattrib('testname', 'Ultrasonic measurement distance test 1 (caliper, spacer)', 'test name');
@@ -402,7 +402,7 @@ function struct_make_static(p_ofp)
   struct_test_utt.d03 = struct_objdata('interval_steps', 'uint_arr', [], [], 'number of interval steps, number of measurements');
   struct_test_utt.d04 = struct_objdata('interval_length', 'uint_arr', [], 'sec', 'interval length, time span between measurements');
   struct_test_utt.d05 = struct_objdata('pulse_voltage', 'double', [], 'V', 'device setting, pulse generator voltage');
-  struct_test_utt.d06 = struct_objdata('pulse_width', 'double', [], 'sec', 'device setting, pulse generator puse width');
+  struct_test_utt.d06 = struct_objdata('pulse_width', 'double', [], 'sec', 'device setting, pulse generator pulse width');
   struct_test_utt.d07 = struct_objdata('sampling_rate', 'uint', [], 'Hz', 'device setting, oscilloscope sampling rate');
   struct_test_utt.d08 = struct_objdata('recorded_block_size', 'uint', [], [], 'recording block size, number of recorded samples');
   struct_test_utt.d09 = struct_objdata('num_init_samples', 'uint', [], [], 'number of initial samples before trigger point');

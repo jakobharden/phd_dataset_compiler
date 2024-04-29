@@ -44,7 +44,7 @@ function [r_ds, r_id] = struct_lic(p_id)
   endif
   
   ## return data structure(s)
-  r_ds = dscs_db_lic.item(p_id);
+  r_ds = dsc_db_lic.item(p_id);
   
   ## return references
   r_id = p_id;

@@ -12,7 +12,7 @@
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ##
-## Create test series matadata database file (GNU octave binary file)
+## Create test series metadata database file (GNU octave binary file)
 ##
 ## Usage: struct_make_metaserdb(p_ofp)
 ##
@@ -47,14 +47,14 @@
 function struct_make_metaserdb(p_ofp)
   
   ## read database file path from global variable, see also init.m
-  global dsc_dbpath_metaser
+  global wavupv_dbpath_metaser
   
   ## check arguments
   if (nargin < 1)
-    p_ofp = dsc_dbpath_metaser;
+    p_ofp = wavupv_dbpath_metaser;
   endif
   if isempty(p_ofp)
-    p_ofp = dsc_dbpath_metaser;
+    p_ofp = wavupv_dbpath_metaser;
   endif
   
   ## test series id's/codes/names
@@ -87,14 +87,13 @@ function struct_make_metaserdb(p_ofp)
   item(id).a01.v = sercodes(id).code;
   item(id).a02.v = sercodes(id).name;
   item(id).a03.v = "Ultrasonic pulse transmission tests performed on cement pastes at early stages";
-  item(id).a04.v = "The test series was created in order to get information about the material behaviour of cement pastes at early \
-stages (first 24 hours) using ultrasonic transmission tests. The approach for the test series was to vary the parameters \
-water-cement-ratio and specimen size (distance between actuator and sensor). This results in a 2-dimensional test parameter grid \
-(w/c-ratio vs. distance). \
-For each point of the parameter grid tests were performed several times in order to get information about the stability of the tests. \
-The materials tested were blends from ordinary portland cement (CEM I 42.5 N) and tap water. The test methods used were ultrasonic \
-pulse transmission tests (combined compression- and shear wave measurements), gravimetric density tests (fresh paste density, \
-solid sample density) and hydration temperature tests.";
+  item(id).a04.v = "The test series was created to receive information about the material behaviour of cement pastes at early stages. \
+The approach for this test series was to vary the parameters water-cement-ratio and distance-between-actuator-and-sensor. \
+This results in a two-dimensional test parameter grid (water-cement-ratio versus distance-between-actuator-and-sensor). \
+For each point of the parameter grid, tests were performed several times to check the stability of the testing method. \
+The materials tested were blends from ordinary Portland cement and tap water. The test methods used were ultrasonic pulse transmission \
+method with combined compression- and shear wave measurements, gravimetric density tests (fresh paste density, solid specimen density) \
+and hydration temperature tests. All test data and metadata are summarized into datasets using GNU octave's open binary file format.";
   item(id).a05.v = sprintf("%s is part of the PhD thesis of Jakob Harden", sercodes(id).name);
   item(id).a06.v = '2020-03-10';
   item(id).a07.v = '2021-03-30';
@@ -112,7 +111,8 @@ solid sample density) and hydration temperature tests.";
 of cement pastes at early stages (first 24 hours). The approach for the test series was to measure the hydration temperature at \
 different locations of a cylindric specimen created from different blends of cement and water. \
 The materials tested were blends from ordinary portland cement (CEM I 42.5 N) and tap water. \
-The test method used was a temperature test with thermocouples and a temperature logger.";
+The test method used was a temperature test with thermocouples and a temperature logger. \
+All test data and metadata are summarized into datasets using GNU Octave's open binary file format.";
   item(id).a05.v = sprintf("%s is part of the PhD thesis of Jakob Harden", sercodes(id).name);
   item(id).a06.v = '2020-07-18';
   item(id).a07.v = '2020-07-22';
@@ -125,16 +125,15 @@ The test method used was a temperature test with thermocouples and a temperature
   item(id).d01.v = sercodes(id).id;
   item(id).a01.v = sercodes(id).code;
   item(id).a02.v = sercodes(id).name;
-  item(id).a03.v = "Ultrasonic pulse transmission tests performed on air";
-  item(id).a04.v = "The test series was created in order to get information about the impact of the behavior of two different piezo-electric \
-shear wave sensors on the measurement results of ultrasonic transmission tests. \
-The approach for the test series was to vary the parameters pulse width, distance between actuator and sensor and the sensor type used \
-for the shear wave measurements. This results in a 3-dimensional parameter grid (pulse width vs. distance vs. sensor type). \
-Tests were performed for each grid point in order to receive information needed to \
-optimize the pulse width for the shear wave sensors but also a possible dependency between material behavior and \
-pulse width. \
-The material tested was the air of the laboratory environment. \
-The test method used was an ultrasonic pulse transmission test (combined compression- and shear wave measurements).";
+  item(id).a03.v = "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 3, Reference Tests on Air";
+  item(id).a04.v = "The test series was created to receive information about the impact of the behaviour of two different piezoelectric \
+shear wave sensors on the measurement results of ultrasonic pulse transmission tests. The approach for the test series was to vary the \
+parameters pulse-width, the distance-between-actuator-and-sensor and the shear-wave-sensor-type. This results in a three-dimensional \
+test parameter grid (pulse-width versus distance-between-actuator-and-sensor versus shear-wave-sensor-type). Tests were performed for \
+each grid point in order to receive information needed to optimize the pulse width but also a possible dependency between material and \
+sensor behaviour. The material tested was the air of the laboratory environment. The test method used was the ultrasonic pulse \
+transmission method with combined compression- and shear wave measurements. All test data and metadata are summarized into datasets \
+using GNU Octave's open binary file format.";
   item(id).a05.v = sprintf("%s is part of the PhD thesis of Jakob Harden", sercodes(id).name);
   item(id).a06.v = '2020-10-30';
   item(id).a07.v = '2020-10-30';
@@ -147,19 +146,19 @@ The test method used was an ultrasonic pulse transmission test (combined compres
   item(id).d01.v = sercodes(id).id;
   item(id).a01.v = sercodes(id).code;
   item(id).a02.v = sercodes(id).name;
-  item(id).a03.v = "Ultrasonic pulse transmission tests performed on cement pastes at early stages";
-  item(id).a04.v = "The test series was created in order to get information about the impact of the behavior of two different piezo-electric \
-shear wave sensors on the measurement results of ultrasonic transmission tests performed on cement pastes at early stages. \
-The approach for the test series was to vary the parameters water-cement-ratio, pulse width and shear wave sensor type. \
-This results in a 3-dimensional parameter grid (w/c-ratio vs. pulse width vs. sensor type). \
-Tests were performed for each grid point in order to receive information needed to ptimize the pulse width for the shear wave \
-sensors but also a possible dependency between material behavior and pulse width. \
-The materials tested were blends from ordinary portland cement (CEM I 42.5 N) and tap water. \
-The test methods used were ultrasonic pulse transmission tests (combined compression- and shear wave measurements), \
-gravimetric density tests (fresh paste density, solid sample density) and hydration temperature tests.";
+  item(id).a03.v = "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 4, Cement Paste at Early Stages";
+  item(id).a04.v = "The test series was created to receive information about the impact of the behaviour of the piezoelectric shear \
+wave sensor on the measurement results of ultrasonic transmission tests performed on cement pastes at early stages. The approach for \
+the test series was to vary the parameters water-cement-ratio and pulse-width. This results in a two-dimensional test parameter grid \
+(water-cement-ratio versus pulse-width). Tests were performed for each grid point in order to receive information needed to optimize \
+the pulse width for the shear wave sensors, but also a possible dependency between material behaviour and pulse width. The materials \
+tested were blends from ordinary Portland cement and tap water. The test methods used were ultrasonic pulse transmission method with \
+combined compression- and shear wave measurements, gravimetric density tests (fresh paste density, solid specimen density) and hydration \
+temperature tests. All test data and metadata are summarized into datasets using GNU Octave's open binary file format.";
   item(id).a05.v = sprintf("%s is part of the PhD thesis of Jakob Harden", sercodes(id).name);
   item(id).a06.v = '2020-10-30';
   item(id).a07.v = '2021-01-29';
+  
   
   ## test series 5
   id = id + 1;
@@ -169,13 +168,14 @@ gravimetric density tests (fresh paste density, solid sample density) and hydrat
   item(id).d01.v = sercodes(id).id;
   item(id).a01.v = sercodes(id).code;
   item(id).a02.v = sercodes(id).name;
-  item(id).a03.v = "Ultrasonic pulse transmission tests performed on air";
+  item(id).a03.v = "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 5, Reference Tests on Air";
   item(id).a04.v = "The test series was created in order to validate the stability and functionality of the test device and to create a data \
-reference for aeriform materials (air). The approach for the test series was to vary the parameters pulse width, pulse voltage and distance \
-between actuator and sensor. This results in a 3-dimensional parameter grid. Tests were performed several times for each grid point \
-(pulse width vs. pulse voltage vs. distance) in order to receive statistical information about the stability of the test results. \
-The material tested was the air in the laboratory room. \
-The test methods used were ultrasonic pulse transmission tests (combined compression- and shear wave measurements) and temperature tests.";
+reference for aeriform materials (air). The approach for the test series was to vary the parameters number-of-samples-recorded, \
+pulse-voltage and distance-between-actuator-and-sensor. This results in a three-dimensional test parameter grid. Tests were performed several \
+times for each grid point (number-of-samples-recorded versus pulse-voltage versus distance-between-actuator-and-sensor) in order to \
+receive statistical information about the stability of the test results. The material tested was the air in the laboratory room. \
+The test method used was the ultrasonic pulse transmission method with combined compression- and shear wave measurements. \
+All test data and metadata are summarized into datasets using GNU Octave's open binary file format.";
   item(id).a05.v = sprintf("%s is part of the PhD thesis of Jakob Harden", sercodes(id).name);
   item(id).a06.v = '2020-03-05';
   item(id).a07.v = '2020-03-06';
@@ -188,13 +188,14 @@ The test methods used were ultrasonic pulse transmission tests (combined compres
   item(id).d01.v = sercodes(id).id;
   item(id).a01.v = sercodes(id).code;
   item(id).a02.v = sercodes(id).name;
-  item(id).a03.v = "Ultrasonic pulse transmission tests performed on water";
+  item(id).a03.v = "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 6, Reference Tests on Water";
   item(id).a04.v = "The test series was created in order to validate the stability and functionality of the test device and to create a data \
-reference for liquid materials (water). The approach for the test series was to vary the parameters pulse width, pulse voltage and distance \
-between actuator and sensor. This results in a 3-dimensional parameter grid. Tests were performed several times for each grid point \
-(pulse width vs. pulse voltage vs. distance) in order to receive statistical information about the stability of the test results. \
-The material tested was tap water from the laboratory water supply system. \
-The test methods used were ultrasonic pulse transmission tests (combined compression- and shear wave measurements) and temperature tests.";
+reference for liquid materials (water). The approach for the test series was to vary the parameters number-of-samples-recorded, \
+pulse-voltage and distance-between-actuator-and-sensor. This results in a three-dimensional test parameter grid. Tests were performed several \
+times for each grid point (number-of-samples-recorded versus pulse-voltage versus distance-between-actuator-and-sensor) in order to \
+receive statistical information about the stability of the test results. The material tested was water from the tap of the laboratory \
+water supply system. The test method used was the ultrasonic pulse transmission method with combined compression- and shear wave \
+measurements. All test data and metadata are summarized into datasets using GNU Octave's open binary file format.";
   item(id).a05.v = sprintf("%s is part of the PhD thesis of Jakob Harden", sercodes(id).name);
   item(id).a06.v = '2020-03-05';
   item(id).a07.v = '2020-03-06';
@@ -207,13 +208,14 @@ The test methods used were ultrasonic pulse transmission tests (combined compres
   item(id).d01.v = sercodes(id).id;
   item(id).a01.v = sercodes(id).code;
   item(id).a02.v = sercodes(id).name;
-  item(id).a03.v = "Ultrasonic pulse transmission tests performed on an aluminium cylinder";
+  item(id).a03.v = "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder";
   item(id).a04.v = "The test series was created in order to validate the stability and functionality of the test device and to create a data \
-reference for metals (aluminium). The approach for the test series was to vary the parameters pulse width and pulse voltage. \
-This results in a 2-dimensional parameter grid. Tests were performed several times for each grid point \
-(pulse width vs. pulse voltage) in order to receive statistical information about the stability of the test results. \
-The material tested was an aluminium cylinder. \
-The test methods used were ultrasonic pulse transmission tests (combined compression- and shear wave measurements) and temperature tests.";
+reference for metals (aluminium cylinder). The approach for the test series was to vary the parameters number-of-samples-recorded and \
+pulse-voltage. This results in a two-dimensional test parameter grid. Tests were performed several times for each grid point \
+(number-of-samples-recorded versus pulse-voltage) in order to receive statistical information about the stability of the test results. \
+The material tested was an aluminium cylinder with a diameter of 50 millimetres and a height of 50 millimetres. \
+The test method used was the ultrasonic pulse transmission method with combined compression- and shear wave \
+measurements. All test data and metadata are summarized into datasets using GNU Octave's open binary file format.";
   item(id).a05.v = sprintf("%s is part of the PhD thesis of Jakob Harden", sercodes(id).name);
   item(id).a06.v = '2020-03-06';
   item(id).a07.v = '2020-03-06';

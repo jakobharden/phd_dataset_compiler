@@ -12,7 +12,7 @@
 ## AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
 ## TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ##
-## Create data set matadata database file (GNU octave binary file)
+## Create data set metadata database file (GNU octave binary file)
 ##
 ## Usage: struct_make_metasetdb(p_ofp)
 ##

@@ -44,7 +44,7 @@ function [r_ds, r_id] = struct_aut(p_id)
   endif
   
   ## return data structure(s)
-  r_ds = wavupv_db_aut.item(p_id);
+  r_ds = dsc_db_aut.item(p_id);
   
   ## return references
   r_id = p_id;
