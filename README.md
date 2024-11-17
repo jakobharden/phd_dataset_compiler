@@ -25,6 +25,7 @@ All files published under the DOI 10.3217/6qg3m-af058 are licensed under the MIT
 
 Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 License: MIT
+
 This file is part of the PhD thesis of Jakob Harden.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
