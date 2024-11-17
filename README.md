@@ -2,14 +2,19 @@
 
 This script collection allows to compile raw data from ultrasonic pulse transmission tests (FreshCon device) to datasets using the open GNU Octave binary file format.
 
-Table of contents:
+[!INFO]
+The entire content of this script collection was conceived, implemented and tested by Jakob Harden using the scientific numerical programming language of GNU Octave 6.2.0.
+
+
+## Table of contents:
 - License
 - Prerequisites
 - Directories and files
 - Installation instructions
 - Usage instructions
-- Help
+- Help and Documentation
 - Related data sources
+- Related software
 - Revision and release history
 
 
@@ -84,7 +89,7 @@ octave: >> ds = load("/path/to/source/mydataset.oct", "dataset").dataset;
 In the example shown above, the raw data of an ultrasonic pulse transmission test on a cement paste is compiled to a binary dataset in "/path/to/source/mydataset.oct".
 
 
-## Help
+## Help and Documentation
 
 All function files in this script collection contain a proper documentation and usage instructions. To access that help on the GNU Octave command line, type:
 ```
@@ -104,6 +109,28 @@ Data sources:
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 5, Reference Tests on Air". Graz University of Technology. doi: 10.3217/bjkrj-pg829
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 6, Reference Tests on Water". Graz University of Technology. doi: 10.3217/hn7we-q7z09
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Graz University of Technology. doi: 10.3217/azh6e-rvy75
+
+
+## Related software
+
+### Dataset Exporter, version 1.0:
+
+*Dataset Exporter* is implemented in the programming language of GNU Octave 6.2.0 and allows for exporting data contained in the datasets. The main features of that script collection cover the export of substructures to variables and the serialization to the CSV format, the JSON structure format and TeX code. It is also made publicly available under the MIT licence at the repository of Graz University of Technology.
+
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Dataset Exporter (1.0)". Graz University of Technology. [doi: 10.3217/9adsn-8dv64](https://doi.org/10.3217/9adsn-8dv64)
+
+[!NOTE]
+*Dataset Exporter* is also available on **github**. [Dataset Exporter](https://github.com/jakobharden/phd_dataset_exporter)
+
+
+### Dataset Viewer, version 1.0:
+
+*Dataset Viewer* is implemented in the programming language of GNU Octave 6.2.0 and allows for plotting measurement data contained in the datasets. The main features of that script collection cover 2D plots, 3D plots and rendering MP4 video files from the measurement data contained in the datasets. It is also made publicly available under the MIT licence at the repository of Graz University of Technology.
+
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Dataset Viewer (1.0)". Graz University of Technology. [doi: 10.3217/c1ccn-8m982](https://doi.org/10.3217/c1ccn-8m982)
+
+[!NOTE]
+*Dataset Viewer* is also available on **github**. [Dataset Viewer](https://github.com/jakobharden/phd_dataset_viewer)
 
 
 ## Revision and release history
