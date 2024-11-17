@@ -2,20 +2,21 @@
 
 This script collection allows to compile raw data from ultrasonic pulse transmission tests (FreshCon device) to datasets using the open GNU Octave binary file format.
 
-[!INFO]
-The entire content of this script collection was conceived, implemented and tested by Jakob Harden using the scientific numerical programming language of GNU Octave 6.2.0.
+> [!NOTE]
+> The entire content of this script collection was conceived, implemented and tested by Jakob Harden using the scientific numerical programming language of GNU Octave 6.2.0.
 
 
-## Table of contents:
-- License
-- Prerequisites
-- Directories and files
-- Installation instructions
-- Usage instructions
-- Help and Documentation
-- Related data sources
-- Related software
-- Revision and release history
+## Table of contents
+
+- [License](#license)
+- [Prerequisites](#prerequisites)
+- [Directory and file structure](#directory-and-file-structure)
+- [Installation instructions](#installation-instructions)
+- [Usage instructions](#usage-instructions)
+- [Help and Documentation](#help-and-documentation)
+- [Related data sources](#related-data-sources)
+- [Related software](#related-software)
+- [Revision and release history](#revision-and-release-history)
 
 
 ## License
@@ -48,7 +49,7 @@ GNU Octave download: https://octave.org/download
 
 ## Directories and files
 
-All scripts files (*.m) are plain text files written in the scientific programming language of GNU Octave 6.2.0.
+All scripts files (*.m) are UTF-8 encoded plain text files written in the scientific programming language of GNU Octave 6.2.0.
 
 Directory and file structure:
 - [fileio] ... directory, collection of file input/output function files.
@@ -65,18 +66,18 @@ Directory and file structure:
 
 ## Installation instructions
 
-1) copy the main program directory to a location of your choice --> **workdir**.
-2) open GNU Octave.
-3) change the working directory to **workdir**.
+1. copy the main program directory to a location of your choice --> **workdir**.   
+2. open GNU Octave.   
+3. change the working directory to **workdir**.   
 
 
 ## Usage instructions
 
-1) uncompress ZIP archive containing the raw data --> **rawdir**
-2) run GNU Octave
-3) initialize program: octave: >>> init;
-4) compile dataset: octave: >>> struct_import(T, S);
-5) load compiled dataset into memory: octave: >>> ds = load(FP, "dataset").dataset;
+1. uncompress ZIP archive containing the raw data --> **rawdir**   
+2. run GNU Octave   
+3. initialize program: octave: >>> init;   
+4. compile dataset: octave: >>> struct_import(T, S);   
+5. load compiled dataset into memory: octave: >>> ds = load(FP, "dataset").dataset;   
 
 Where **T** is the raw data source type, **S** the raw data source directory and **FP** the full qualified file path to the compiled data set. Possible options for **T** are documented in the function file **./struct_hdf/import/struct_import.m**. The resulting output file (*.oct) is always written to the parent directory of the source directory.
 
@@ -119,8 +120,8 @@ Data sources:
 
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Dataset Exporter (1.0)". Graz University of Technology. [doi: 10.3217/9adsn-8dv64](https://doi.org/10.3217/9adsn-8dv64)
 
-[!NOTE]
-*Dataset Exporter* is also available on **github**. [Dataset Exporter](https://github.com/jakobharden/phd_dataset_exporter)
+> [!NOTE]
+> *Dataset Exporter* is also available on **github**. [Dataset Exporter](https://github.com/jakobharden/phd_dataset_exporter)
 
 
 ### Dataset Viewer, version 1.0:
@@ -129,8 +130,8 @@ Data sources:
 
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Dataset Viewer (1.0)". Graz University of Technology. [doi: 10.3217/c1ccn-8m982](https://doi.org/10.3217/c1ccn-8m982)
 
-[!NOTE]
-*Dataset Viewer* is also available on **github**. [Dataset Viewer](https://github.com/jakobharden/phd_dataset_viewer)
+> [!NOTE]
+> *Dataset Viewer* is also available on **github**. [Dataset Viewer](https://github.com/jakobharden/phd_dataset_viewer)
 
 
 ## Revision and release history
