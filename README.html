@@ -23,7 +23,7 @@ The entire content of this script collection was conceived, implemented and test
 
 <h2>License</h2>
 
-<p>All files published under the DOI 10.3217/6qg3m-af058 are licensed under the MIT license.</p>
+<p>All files published under the <strong>DOI 10.3217/6qg3m-af058</strong> are licensed under the MIT license.</p>
 
 <p>Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 License: MIT</p>
@@ -48,25 +48,42 @@ have to download the Windows version of GNU Octave and to install the software m
 
 <p><a href="https://octave.org/download">GNU Octave download</a></p>
 
-<h2>Directories and files</h2>
+<h2>Directory and file structure</h2>
 
-<p>All scripts files (*.m) are UTF-8 encoded plain text files written in the scientific programming language of GNU Octave 6.2.0.</p>
+<p>All script files (*.m) are UTF-8 encoded plain text files written in the scientific programming language of GNU Octave 6.2.0.</p>
 
-<p>```</p>
+<p><code>
+dataset_compiler
+├── fileio
+│   └── *.m
+├── init.m
+├── LICENSE
+├── README.html
+├── README.md
+└── struct_hdf
+    ├── atomic
+    ├── db
+    ├── export
+    ├── import
+    ├── plot
+    ├── *.m
+    └── update
+</code></p>
 
-<p>'''
-Directory and file structure:
-- [fileio] ... directory, collection of file input/output function files.
-- [struct<em>hdf] ... directory, collection of function files to compile the datasets from raw data (*.oct files).
-- [struct</em>hdf/atomic] ... directory, function files related atomic structure elements (lowest level of the hierarchical data structure).
-- [struct<em>hdf/db] ... directory, function files to create the databases that hold the information about devices, materials, etc.
-- [struct</em>hdf/export] ... directory, function files to export data structure elements.
-- [struct<em>hdf/import] ... directory, function files to compile binary datasets from raw data.
-- [struct</em>hdf/update] ... directory, function files to update an already existing binary dataset (<em>.oct file).
-- [struct_hdf/</em>.m] ... function files to create the substructures of a binary dataset (*.oct file).
-- init.m ... function file used to initialize the program.
-- README.md ... this file
-- README.html ... html version of this file</p>
+<ul>
+<li><strong>fileio</strong> ... directory, collection of file input/output function files.</li>
+<li><strong>fileio</strong>/*.m ... input/output function files</li>
+<li><strong>struct_hdf</strong> ... directory, collection of function files to compile the datasets from raw data (*.oct files).    </li>
+<li><strong>struct_hdf/atomic</strong> ... directory, function files related atomic structure elements (lowest level of the hierarchical data structure).    </li>
+<li><strong>struct_hdf/db</strong> ... directory, function files to create the databases containing information about devices, materials, etc.    </li>
+<li><strong>struct_hdf/export</strong> ... directory, function files to export data structure elements.    </li>
+<li><strong>struct_hdf/import</strong> ... directory, function files to compile binary datasets from raw data.    </li>
+<li><strong>struct_hdf/update</strong> ... directory, function files to update an existing binary dataset (*.oct file).    </li>
+<li><strong>struct_hdf</strong>/*.m ... function files to create the substructures of a binary dataset (*.oct file).    </li>
+<li>init.m ... function file to initialize the program.    </li>
+<li>README.md ... this file    </li>
+<li>README.html ... html version of this file</li>
+</ul>
 
 <h2>Installation instructions</h2>
 
