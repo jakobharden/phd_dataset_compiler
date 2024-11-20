@@ -50,24 +50,22 @@ have to download the Windows version of GNU Octave and to install the software m
 
 ## Directories and files
 
-All scripts files (*.m) are UTF-8 encoded plain text files written in the scientific programming language of GNU Octave 6.2.0.
+All script files (*.m) are UTF-8 encoded plain text files written in the scientific programming language of GNU Octave 6.2.0.
 
-```
-
-'''
 Directory and file structure:
+```
 - [fileio] ... directory, collection of file input/output function files.
 - [struct_hdf] ... directory, collection of function files to compile the datasets from raw data (*.oct files).
 - [struct_hdf/atomic] ... directory, function files related atomic structure elements (lowest level of the hierarchical data structure).
-- [struct_hdf/db] ... directory, function files to create the databases that hold the information about devices, materials, etc.
+- [struct_hdf/db] ... directory, function files to create the databases containing information about devices, materials, etc.
 - [struct_hdf/export] ... directory, function files to export data structure elements.
 - [struct_hdf/import] ... directory, function files to compile binary datasets from raw data.
-- [struct_hdf/update] ... directory, function files to update an already existing binary dataset (*.oct file).
+- [struct_hdf/update] ... directory, function files to update an existing binary dataset (*.oct file).
 - [struct_hdf/*.m] ... function files to create the substructures of a binary dataset (*.oct file).
 - init.m ... function file used to initialize the program.
 - README.md ... this file
 - README.html ... html version of this file
-
+'''
 
 ## Installation instructions
 
