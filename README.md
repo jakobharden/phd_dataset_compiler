@@ -163,9 +163,9 @@ Data sources:
 
 ### 2023-08-06, version 1.1
 
-- Moved the copyright notice to the bottom of the function file documentation in all file headers. The license stays the same (MIT). This was done to stay aligned to GNU Octave function file documentation definitions (copyright notice goes after the function synopsis). Additionally, the help command (octave: >> help "function_file_name") is now parsing and displaying the function file documentation correctly.
-- No chages were made to the program logic.
+- Moved the copyright notice to the bottom of the function file documentation in all file headers. The license stays the same (MIT). This was done to stay aligned with GNU Octave function file documentation definitions (the copyright notice goes after the function synopsis). Additionally, the help command (octave: >> help "function_file_name") is now parsing and displaying the function file documentation correctly.
+- No changes were made to the program logic.
 - Added a revision and release history to the README.md file.
 - Minor updates in the text of the README.md file.
-- published/released version 1.1 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; doi: 10.3217/6qg3m-af058
+- published/released version 1.1 at the repository of Graz University of Technology; [doi: 10.3217/6qg3m-af058](https://doi.org/10.3217/6qg3m-af058)
 
