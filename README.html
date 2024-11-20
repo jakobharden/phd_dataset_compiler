@@ -26,8 +26,9 @@ The entire content of this script collection was conceived, implemented and test
 <p>All files published under the DOI 10.3217/6qg3m-af058 are licensed under the MIT license.</p>
 
 <p>Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
-License: MIT
-This file is part of the PhD thesis of Jakob Harden.</p>
+License: MIT</p>
+
+<p>This file is part of the PhD thesis of Jakob Harden.</p>
 
 <p>Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated 
 documentation files (the “Software”), to deal in the Software without restriction, including without 
@@ -45,23 +46,27 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR TH
 GNU Octave is available via the package management system on many Linux distributions. Windows users 
 have to download the Windows version of GNU Octave and to install the software manually.</p>
 
-<p>GNU Octave download: https://octave.org/download</p>
+<p><a href="https://octave.org/download">GNU Octave download</a></p>
 
 <h2>Directories and files</h2>
 
 <p>All scripts files (*.m) are UTF-8 encoded plain text files written in the scientific programming language of GNU Octave 6.2.0.</p>
 
-<p>Directory and file structure:
+<p>```</p>
+
+<p>'''
+Directory and file structure:
 - [fileio] ... directory, collection of file input/output function files.
-- [struct<em>hdf] ... directory, collection of function files used to compile the datasets from raw data (*.oct files).
+- [struct<em>hdf] ... directory, collection of function files to compile the datasets from raw data (*.oct files).
 - [struct</em>hdf/atomic] ... directory, function files related atomic structure elements (lowest level of the hierarchical data structure).
-- [struct<em>hdf/db] ... directory, function files used to create the databases that hold the information about devices, materials, etc.
-- [struct</em>hdf/export] ... directory, function files used to export data structure elements.
-- [struct<em>hdf/import] ... directory, function files used to compile binary datasets from raw data.
-- [struct</em>hdf/update] ... directory, function files used to update an already existing binary dataset (<em>.oct file).
-- [struct_hdf/</em>.m] ... function files used to create the substructures of a binary dataset (*.oct file).
+- [struct<em>hdf/db] ... directory, function files to create the databases that hold the information about devices, materials, etc.
+- [struct</em>hdf/export] ... directory, function files to export data structure elements.
+- [struct<em>hdf/import] ... directory, function files to compile binary datasets from raw data.
+- [struct</em>hdf/update] ... directory, function files to update an already existing binary dataset (<em>.oct file).
+- [struct_hdf/</em>.m] ... function files to create the substructures of a binary dataset (*.oct file).
 - init.m ... function file used to initialize the program.
-- README.md ... this file</p>
+- README.md ... this file
+- README.html ... html version of this file</p>
 
 <h2>Installation instructions</h2>
 
@@ -81,7 +86,7 @@ have to download the Windows version of GNU Octave and to install the software m
 <li>load compiled dataset into memory: octave: >>> ds = load(FP, "dataset").dataset;   </li>
 </ol>
 
-<p>Where <strong>T</strong> is the raw data source type, <strong>S</strong> the raw data source directory and <strong>FP</strong> the full qualified file path to the compiled data set. Possible options for <strong>T</strong> are documented in the function file <strong>./struct<em>hdf/import/struct</em>import.m</strong>. The resulting output file (*.oct) is always written to the parent directory of the source directory.</p>
+<p>Where <strong>T</strong> is the raw data source type, <strong>S</strong> the raw data source directory and <strong>FP</strong> the full qualified file path to the compiled data set. Possible options for <strong>T</strong> are documented in the function file <strong>./struct<em>hdf/import/struct</em>import.m</strong>. The resulting output file (*.oct) is always placed in the parent directory of the source directory.</p>
 
 <p>Example:
 <code>
@@ -104,12 +109,12 @@ octave: &gt;&gt; help function_file_name;
 <p>Datasets compiled with this scripts are made available at the repository of Graz University of Technology under an open license (Creative Commons, CC BY 4.0). The repository records enlisted below contain the raw data, the compiled datasets and a technical description of the record content.</p>
 
 <p>Data sources:
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 1, Cement Paste at Early Stages". Graz University of Technology. doi: 10.3217/bhs4g-m3z76
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 3, Reference Tests on Air". Graz University of Technology. doi: 10.3217/ph0jm-8ax76
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 4, Cement Paste at Early Stages". Graz University of Technology. doi: 10.3217/f62md-kep36
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 5, Reference Tests on Air". Graz University of Technology. doi: 10.3217/bjkrj-pg829
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 6, Reference Tests on Water". Graz University of Technology. doi: 10.3217/hn7we-q7z09
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Graz University of Technology. doi: 10.3217/azh6e-rvy75</p>
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 1, Cement Paste at Early Stages". Graz University of Technology. <a href="https://doi.org/10.3217/bhs4g-m3z76">doi: 10.3217/bhs4g-m3z76</a>
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 3, Reference Tests on Air". Graz University of Technology. <a href="https://doi.org/10.3217/ph0jm-8ax76">doi: 10.3217/ph0jm-8ax76</a>
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 4, Cement Paste at Early Stages". Graz University of Technology. <a href="https://doi.org/10.3217/f62md-kep36">doi: 10.3217/f62md-kep36</a>
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 5, Reference Tests on Air". Graz University of Technology. <a href="https://doi.org/10.3217/bjkrj-pg829">doi: 10.3217/bjkrj-pg829</a>
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 6, Reference Tests on Water". Graz University of Technology. <a href="https://doi.org/10.3217/hn7we-q7z09">doi: 10.3217/hn7we-q7z09</a>
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Graz University of Technology. <a href="https://doi.org/10.3217/azh6e-rvy75">doi: 10.3217/azh6e-rvy75</a></p>
 
 <h2>Related software</h2>
 
@@ -144,7 +149,7 @@ octave: &gt;&gt; help function_file_name;
 <h3>2023-07-14, version 1</h3>
 
 <ul>
-<li>published/released version 1 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; doi: 10.3217/6t7km-5dg82</li>
+<li>published/released version 1 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; <a href="https://doi.org/10.3217/6t7km-5dg82">doi: 10.3217/6t7km-5dg82</a></li>
 </ul>
 
 <h3>2023-08-06, version 1.1</h3>

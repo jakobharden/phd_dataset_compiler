@@ -45,24 +45,28 @@ To be able to use the scripts, GNU Octave 6.2.0 (or a higher version) need to to
 GNU Octave is available via the package management system on many Linux distributions. Windows users 
 have to download the Windows version of GNU Octave and to install the software manually.
 
-GNU Octave download: https://octave.org/download
+[GNU Octave download](https://octave.org/download)
 
 
 ## Directories and files
 
 All scripts files (*.m) are UTF-8 encoded plain text files written in the scientific programming language of GNU Octave 6.2.0.
 
+```
+
+'''
 Directory and file structure:
 - [fileio] ... directory, collection of file input/output function files.
-- [struct_hdf] ... directory, collection of function files used to compile the datasets from raw data (*.oct files).
+- [struct_hdf] ... directory, collection of function files to compile the datasets from raw data (*.oct files).
 - [struct_hdf/atomic] ... directory, function files related atomic structure elements (lowest level of the hierarchical data structure).
-- [struct_hdf/db] ... directory, function files used to create the databases that hold the information about devices, materials, etc.
-- [struct_hdf/export] ... directory, function files used to export data structure elements.
-- [struct_hdf/import] ... directory, function files used to compile binary datasets from raw data.
-- [struct_hdf/update] ... directory, function files used to update an already existing binary dataset (*.oct file).
-- [struct_hdf/*.m] ... function files used to create the substructures of a binary dataset (*.oct file).
+- [struct_hdf/db] ... directory, function files to create the databases that hold the information about devices, materials, etc.
+- [struct_hdf/export] ... directory, function files to export data structure elements.
+- [struct_hdf/import] ... directory, function files to compile binary datasets from raw data.
+- [struct_hdf/update] ... directory, function files to update an already existing binary dataset (*.oct file).
+- [struct_hdf/*.m] ... function files to create the substructures of a binary dataset (*.oct file).
 - init.m ... function file used to initialize the program.
 - README.md ... this file
+- README.html ... html version of this file
 
 
 ## Installation instructions
@@ -80,7 +84,7 @@ Directory and file structure:
 4. compile dataset: octave: >>> struct_import(T, S);   
 5. load compiled dataset into memory: octave: >>> ds = load(FP, "dataset").dataset;   
 
-Where **T** is the raw data source type, **S** the raw data source directory and **FP** the full qualified file path to the compiled data set. Possible options for **T** are documented in the function file **./struct_hdf/import/struct_import.m**. The resulting output file (*.oct) is always written to the parent directory of the source directory.
+Where **T** is the raw data source type, **S** the raw data source directory and **FP** the full qualified file path to the compiled data set. Possible options for **T** are documented in the function file **./struct_hdf/import/struct_import.m**. The resulting output file (*.oct) is always placed in the parent directory of the source directory.
 
 Example:
 ```
@@ -105,12 +109,12 @@ octave: >> help function_file_name;
 Datasets compiled with this scripts are made available at the repository of Graz University of Technology under an open license (Creative Commons, CC BY 4.0). The repository records enlisted below contain the raw data, the compiled datasets and a technical description of the record content.
 
 Data sources:
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 1, Cement Paste at Early Stages". Graz University of Technology. doi: 10.3217/bhs4g-m3z76
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 3, Reference Tests on Air". Graz University of Technology. doi: 10.3217/ph0jm-8ax76
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 4, Cement Paste at Early Stages". Graz University of Technology. doi: 10.3217/f62md-kep36
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 5, Reference Tests on Air". Graz University of Technology. doi: 10.3217/bjkrj-pg829
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 6, Reference Tests on Water". Graz University of Technology. doi: 10.3217/hn7we-q7z09
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Graz University of Technology. doi: 10.3217/azh6e-rvy75
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 1, Cement Paste at Early Stages". Graz University of Technology. [doi: 10.3217/bhs4g-m3z76](https://doi.org/10.3217/bhs4g-m3z76)
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 3, Reference Tests on Air". Graz University of Technology. [doi: 10.3217/ph0jm-8ax76](https://doi.org/10.3217/ph0jm-8ax76)
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 4, Cement Paste at Early Stages". Graz University of Technology. [doi: 10.3217/f62md-kep36](https://doi.org/10.3217/f62md-kep36)
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 5, Reference Tests on Air". Graz University of Technology. [doi: 10.3217/bjkrj-pg829](https://doi.org/10.3217/bjkrj-pg829)
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 6, Reference Tests on Water". Graz University of Technology. [doi: 10.3217/hn7we-q7z09](https://doi.org/10.3217/hn7we-q7z09)
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Graz University of Technology. [doi: 10.3217/azh6e-rvy75](https://doi.org/10.3217/azh6e-rvy75)
 
 
 ## Related software
@@ -139,7 +143,7 @@ Data sources:
 
 ### 2023-07-14, version 1
 
-- published/released version 1 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; doi: 10.3217/6t7km-5dg82
+- published/released version 1 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; [doi: 10.3217/6t7km-5dg82](https://doi.org/10.3217/6t7km-5dg82)
 
 
 ### 2023-08-06, version 1.1
