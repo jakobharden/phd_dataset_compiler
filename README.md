@@ -21,7 +21,7 @@ This script collection allows to compile raw data from ultrasonic pulse transmis
 
 ## License
 
-All files published under the DOI 10.3217/6qg3m-af058 are licensed under the MIT license.
+All files published under the **DOI 10.3217/6qg3m-af058** are licensed under the MIT license.
 
 Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 License: MIT
@@ -48,24 +48,41 @@ have to download the Windows version of GNU Octave and to install the software m
 [GNU Octave download](https://octave.org/download)
 
 
-## Directories and files
+## Directory and file structure
 
-All script files (*.m) are UTF-8 encoded plain text files written in the scientific programming language of GNU Octave 6.2.0.
+All script files (\*.m) are UTF-8 encoded plain text files written in the scientific programming language of GNU Octave 6.2.0.
 
-Directory and file structure:
 ```
-- [fileio] ... directory, collection of file input/output function files.
-- [struct_hdf] ... directory, collection of function files to compile the datasets from raw data (*.oct files).
-- [struct_hdf/atomic] ... directory, function files related atomic structure elements (lowest level of the hierarchical data structure).
-- [struct_hdf/db] ... directory, function files to create the databases containing information about devices, materials, etc.
-- [struct_hdf/export] ... directory, function files to export data structure elements.
-- [struct_hdf/import] ... directory, function files to compile binary datasets from raw data.
-- [struct_hdf/update] ... directory, function files to update an existing binary dataset (*.oct file).
-- [struct_hdf/*.m] ... function files to create the substructures of a binary dataset (*.oct file).
-- init.m ... function file used to initialize the program.
-- README.md ... this file
+dataset_compiler
+├── fileio
+│   └── *.m
+├── init.m
+├── LICENSE
+├── README.html
+├── README.md
+└── struct_hdf
+    ├── atomic
+    ├── db
+    ├── export
+    ├── import
+    ├── plot
+    ├── *.m
+    └── update
+```
+
+- **fileio** ... directory, collection of file input/output function files.
+- **fileio**/\*.m ... input/output function files
+- **struct_hdf** ... directory, collection of function files to compile the datasets from raw data (\*.oct files).    
+- **struct_hdf/atomic** ... directory, function files related atomic structure elements (lowest level of the hierarchical data structure).    
+- **struct_hdf/db** ... directory, function files to create the databases containing information about devices, materials, etc.    
+- **struct_hdf/export** ... directory, function files to export data structure elements.    
+- **struct_hdf/import** ... directory, function files to compile binary datasets from raw data.    
+- **struct_hdf/update** ... directory, function files to update an existing binary dataset (\*.oct file).    
+- **struct_hdf**/\*.m ... function files to create the substructures of a binary dataset (\*.oct file).    
+- init.m ... function file to initialize the program.    
+- README.md ... this file    
 - README.html ... html version of this file
-'''
+
 
 ## Installation instructions
 
