@@ -1,4 +1,4 @@
-# Dataset compiler, version 1.1
+# Dataset compiler, version 1.2
 
 This script collection allows to compile raw data from ultrasonic pulse transmission tests (FreshCon device) to datasets using the open GNU Octave binary file format.
 
@@ -21,9 +21,9 @@ This script collection allows to compile raw data from ultrasonic pulse transmis
 
 ## License
 
-All files published under the **DOI 10.3217/6qg3m-af058** are licensed under the MIT license.
+All files published under the **DOI 10.3217/bcydt-6ta35** are licensed under the MIT license.
 
-Copyright 2023 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
+Copyright 2023,2025 Jakob Harden (jakob.harden@tugraz.at, Graz University of Technology, Graz, Austria)
 License: MIT
 
 This file is part of the PhD thesis of Jakob Harden.
@@ -129,7 +129,8 @@ Data sources:
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 4, Cement Paste at Early Stages". Graz University of Technology. [doi: 10.3217/f62md-kep36](https://doi.org/10.3217/f62md-kep36)
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 5, Reference Tests on Air". Graz University of Technology. [doi: 10.3217/bjkrj-pg829](https://doi.org/10.3217/bjkrj-pg829)
 - Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 6, Reference Tests on Water". Graz University of Technology. [doi: 10.3217/hn7we-q7z09](https://doi.org/10.3217/hn7we-q7z09)
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Graz University of Technology. [doi: 10.3217/azh6e-rvy75](https://doi.org/10.3217/azh6e-rvy75)
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Version 1.0. Graz University of Technology. [doi: 10.3217/azh6e-rvy75](https://doi.org/10.3217/azh6e-rvy75)
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Version 1.1. Graz University of Technology. [doi: 10.3217/w3mb5-1wx17](https://doi.org/10.3217/w3mb5-1wx17)
 
 
 ## Related software
@@ -158,7 +159,7 @@ Data sources:
 
 ### 2023-07-14, version 1
 
-- published/released version 1 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; [doi: 10.3217/6t7km-5dg82](https://doi.org/10.3217/6t7km-5dg82)
+- published/released version 1 at the repository of Graz University of Technology; [doi: 10.3217/6t7km-5dg82](https://doi.org/10.3217/6t7km-5dg82)
 
 
 ### 2023-08-06, version 1.1
@@ -167,12 +168,11 @@ Data sources:
 - No chages were made to the program logic.
 - Added revision and release history to the README.md file.
 - Minor updates in the text of the README.md file.
-- published/released version 1.1 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; doi: 10.3217/6qg3m-af058
-
+- published/released version 1.1 on the repository of Graz University of Technology; [doi: 10.3217/6qg3m-af058](https://doi.org/10.3217/6qg3m-af058)
 
 ### 2025-02-05, version 1.2
 
-- Added patch function (see directory "patches", function file "ts7\_patch\_v11.m") to correct incorrect numbers in the binary datasets of test series 7 (reference tests on aluminium cylinder). The license stays the same (MIT).
-- This patch is also available in the GitHUB repository "https://github.com/jakobharden/phd\_dataset\_compiler".
+- Added patch function (see directory "patches", function file "patch\_ts7\_v11.m") to correct incorrect numbers in the binary datasets of test series 7 (reference tests on aluminium cylinder). The license stays the same (MIT).
+- This patch is also available in the [GitHub repository](https://github.com/jakobharden/phd\_dataset\_compiler).
 - Added revision and release history to the README.md file.
-- published/released version 1.2 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; doi: 10.3217/bcydt-6ta35
+- published/released version 1.2 on the repository of Graz University of Technology; [doi: 10.3217/bcydt-6ta35](https://doi.org/10.3217/bcydt-6ta35)
