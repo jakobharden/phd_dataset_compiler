@@ -165,7 +165,14 @@ Data sources:
 
 - Moved the copyright notice to the bottom of the function file documentation in all file headers. The license stays the same (MIT). This was done to stay aligned to GNU Octave function file documentation definitions (copyright notice goes after the function synopsis). Additionally, the help command (octave: >> help "function_file_name") is now parsing and displaying the function file documentation correctly.
 - No chages were made to the program logic.
-- Added a revision and release history to the README.md file.
+- Added revision and release history to the README.md file.
 - Minor updates in the text of the README.md file.
 - published/released version 1.1 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; doi: 10.3217/6qg3m-af058
 
+
+### 2025-02-05, version 1.2
+
+- Added patch function (see directory "patches", function file "ts7\_patch\_v11.m") to correct incorrect numbers in the binary datasets of test series 7 (reference tests on aluminium cylinder). The license stays the same (MIT).
+- This patch is also available in the GitHUB repository "https://github.com/jakobharden/phd\_dataset\_compiler".
+- Added revision and release history to the README.md file.
+- published/released version 1.2 at the repository of Graz University of Technology; url: (https://repository.tugraz.at/)[https://repository.tugraz.at/]; doi: 10.3217/bcydt-6ta35
