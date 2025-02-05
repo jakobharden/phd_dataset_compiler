@@ -56,6 +56,8 @@ All script files (\*.m) are UTF-8 encoded plain text files written in the scient
 dataset_compiler
 ├── fileio
 │   └── *.m
+├── patches
+│   └── *.m
 ├── init.m
 ├── LICENSE
 ├── README.html
@@ -70,8 +72,10 @@ dataset_compiler
     └── update
 ```
 
-- **fileio** ... directory, collection of file input/output function files.
-- **fileio**/\*.m ... input/output function files
+- **fileio** ... directory, collection of file input/output function files.   
+- **fileio**/\*.m ... input/output function files   
+- **patches** ... directory, collection of patch function files   
+- **patches**/\*.m ... patch function files to correct and update compiled datasets   
 - **struct_hdf** ... directory, collection of function files to compile the datasets from raw data (\*.oct files).    
 - **struct_hdf/atomic** ... directory, function files related atomic structure elements (lowest level of the hierarchical data structure).    
 - **struct_hdf/db** ... directory, function files to create the databases containing information about devices, materials, etc.    
