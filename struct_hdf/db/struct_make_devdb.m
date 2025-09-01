@@ -138,6 +138,7 @@ function struct_make_devdb(p_ofp)
   item_empty.a04 = struct_objattrib('category', [], 'device category');
   item_empty.a05 = struct_objattrib('usage', [], 'device usage');
   item_empty.a06 = struct_objattrib('description', [], 'device description');
+  item_empty.a07 = struct_objattrib('specification', 'N/A', 'device specifications, text/URL'); # additional field
   item_empty.s01 = [];
 
   ## device, id = 1
@@ -716,9 +717,11 @@ function struct_make_devdb(p_ofp)
   id = 32;
   item(id) = item_empty;
   item(id).d01.v = id;
-  item(id).a01.v = 'Testo-454';
+  ##item(id).a01.v = 'Testo-454';
+  item(id).a01.v = 'Testo-177T4'; # updated value
   item(id).a02.v = 'Testo GmbH (Vienna, Austria)';
-  item(id).a03.v = 'Testo-454';
+  ##item(id).a03.v = 'Testo-454';
+  item(id).a03.v = 'Testo-177T4, temperature DAQ'; # updated value
   item(id).a04.v = 'DAQ';
   item(id).a05.v = 'ultrasonic transmission test, specimen temperature measurement';
   item(id).a06.v = '';
