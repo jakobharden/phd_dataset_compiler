@@ -177,6 +177,6 @@ Data sources:
 ### 2025-02-05, version 1.2
 
 - Added patch function (see directory "patches", function file "patch\_ts7\_v11.m") to correct incorrect numbers in the binary datasets of test series 7 (reference tests on aluminium cylinder). The license stays the same (MIT).
-- This patch is also available in the [GitHub repository](https://github.com/jakobharden/phd\_dataset\_compiler).
+- This patch is also available in the [GitHub repository](https://github.com/jakobharden/phd_dataset_compiler).
 - Added revision and release history to the README.md file.
 - published/released version 1.2 on the repository of Graz University of Technology; [doi: 10.3217/bcydt-6ta35](https://doi.org/10.3217/bcydt-6ta35)

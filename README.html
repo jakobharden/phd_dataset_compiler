@@ -56,6 +56,8 @@ have to download the Windows version of GNU Octave and to install the software m
 dataset_compiler
 ├── fileio
 │   └── *.m
+├── patches
+│   └── *.m
 ├── init.m
 ├── LICENSE
 ├── README.html
@@ -71,8 +73,10 @@ dataset_compiler
 </code></p>
 
 <ul>
-<li><strong>fileio</strong> ... directory, collection of file input/output function files.</li>
-<li><strong>fileio</strong>/*.m ... input/output function files</li>
+<li><strong>fileio</strong> ... directory, collection of file input/output function files.   </li>
+<li><strong>fileio</strong>/*.m ... input/output function files   </li>
+<li><strong>patches</strong> ... directory, collection of patch function files   </li>
+<li><strong>patches</strong>/*.m ... patch function files to correct and update compiled datasets   </li>
 <li><strong>struct_hdf</strong> ... directory, collection of function files to compile the datasets from raw data (*.oct files).    </li>
 <li><strong>struct_hdf/atomic</strong> ... directory, function files related atomic structure elements (lowest level of the hierarchical data structure).    </li>
 <li><strong>struct_hdf/db</strong> ... directory, function files to create the databases containing information about devices, materials, etc.    </li>
