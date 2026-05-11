@@ -107,9 +107,9 @@ Where **T** is the raw data source type, **S** the raw data source directory and
 
 Example:
 ```
-octave: >> init;
-octave: >> struct_import("paste", "/path/to/source/mydataset");
-octave: >> ds = load("/path/to/source/mydataset.oct", "dataset").dataset;
+octave: >> init;   
+octave: >> struct_import("paste", "/path/to/source/mydataset");   
+octave: >> ds = load("/path/to/source/mydataset.oct", "dataset").dataset;   
 ```
 In the example shown above, the raw data of an ultrasonic pulse transmission test on a cement paste is compiled to a binary dataset in "/path/to/source/mydataset.oct".
 
@@ -118,8 +118,8 @@ In the example shown above, the raw data of an ultrasonic pulse transmission tes
 
 All function files in this script collection contain a proper documentation and usage instructions. To access that help on the GNU Octave command line, type:
 ```
-octave: >> init;
-octave: >> help function_file_name;
+octave: >> init;   
+octave: >> help function_file_name;   
 ```
 
 
@@ -128,22 +128,22 @@ octave: >> help function_file_name;
 Datasets compiled with this scripts are made available at the repository of Graz University of Technology under an open license (Creative Commons, CC BY 4.0). The repository records enlisted below contain the raw data, the compiled datasets and a technical description of the record content.
 
 Data sources:
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 1, Cement Paste at Early Stages". Graz University of Technology. [doi: 10.3217/bhs4g-m3z76](https://doi.org/10.3217/bhs4g-m3z76)
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 3, Reference Tests on Air". Graz University of Technology. [doi: 10.3217/ph0jm-8ax76](https://doi.org/10.3217/ph0jm-8ax76)
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 4, Cement Paste at Early Stages". Graz University of Technology. [doi: 10.3217/f62md-kep36](https://doi.org/10.3217/f62md-kep36)
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 5, Reference Tests on Air". Graz University of Technology. [doi: 10.3217/bjkrj-pg829](https://doi.org/10.3217/bjkrj-pg829)
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 6, Reference Tests on Water". Graz University of Technology. [doi: 10.3217/hn7we-q7z09](https://doi.org/10.3217/hn7we-q7z09)
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Version 1.0. Graz University of Technology. [doi: 10.3217/azh6e-rvy75](https://doi.org/10.3217/azh6e-rvy75)
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Version 1.1. Graz University of Technology. [doi: 10.3217/w3mb5-1wx17](https://doi.org/10.3217/w3mb5-1wx17)
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 1, Cement Paste at Early Stages". Graz University of Technology. [doi: 10.3217/bhs4g-m3z76](https://doi.org/10.3217/bhs4g-m3z76)   
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 3, Reference Tests on Air". Graz University of Technology. [doi: 10.3217/ph0jm-8ax76](https://doi.org/10.3217/ph0jm-8ax76)   
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 4, Cement Paste at Early Stages". Graz University of Technology. [doi: 10.3217/f62md-kep36](https://doi.org/10.3217/f62md-kep36)   
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 5, Reference Tests on Air". Graz University of Technology. [doi: 10.3217/bjkrj-pg829](https://doi.org/10.3217/bjkrj-pg829)   
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 6, Reference Tests on Water". Graz University of Technology. [doi: 10.3217/hn7we-q7z09](https://doi.org/10.3217/hn7we-q7z09)   
+- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Version 1.0. Graz University of Technology. [doi: 10.3217/azh6e-rvy75](https://doi.org/10.3217/azh6e-rvy75)   
+- Harden, J. (2025) "Ultrasonic Pulse Transmission Tests: Datasets - Test Series 7, Reference Tests on Aluminium Cylinder". Version 1.1. Graz University of Technology. [doi: 10.3217/w3mb5-1wx17](https://doi.org/10.3217/w3mb5-1wx17)   
 
 
 ## Related software
 
-### Dataset Exporter, version 1.0:
+### Dataset Exporter, version 1.2:
 
-*Dataset Exporter* is implemented in the programming language of GNU Octave 6.2.0 and allows for exporting data contained in the datasets. The main features of that script collection cover the export of substructures to variables and the serialization to the CSV format, the JSON structure format and TeX code. It is also made publicly available under the MIT licence at the repository of Graz University of Technology.
+*Dataset Exporter* is implemented in the programming language of GNU Octave 6.2.0 and allows for exporting data contained in the datasets. The main features of that script collection cover the export of substructures to variables and the serialisation to the CSV format, the JSON structure format and TeX code. It is also made publicly available under the MIT licence at the repository of Graz University of Technology.
 
-- Harden, J. (2023) "Ultrasonic Pulse Transmission Tests: Dataset Exporter (1.0)". Graz University of Technology. [doi: 10.3217/9adsn-8dv64](https://doi.org/10.3217/9adsn-8dv64)
+- Harden, J. (2026) "Ultrasonic Pulse Transmission Tests: Dataset Exporter (1.2)". Graz University of Technology. [doi: 10.3217/xxxx](https://doi.org/10.5281/zenodo.20116209)
 
 > [!NOTE]
 > *Dataset Exporter* is also available on **github**. [Dataset Exporter](https://github.com/jakobharden/phd_dataset_exporter)
@@ -161,22 +161,24 @@ Data sources:
 
 ## Revision and release history
 
-### 2023-07-14, version 1
+### 2023-07-14, version 1.0
 
-- published/released version 1 at the repository of Graz University of Technology; [doi: 10.3217/6t7km-5dg82](https://doi.org/10.3217/6t7km-5dg82)
-
+- published/released version 1.0, by Jakob Harden   
+- url: [https://doi.org/10.3217/6t7km-5dg82](https://doi.org/10.3217/6t7km-5dg82)   
+- doi: 10.3217/6t7km-5dg82   
 
 ### 2023-08-06, version 1.1
 
-- Moved the copyright notice to the bottom of the function file documentation in all file headers. The license stays the same (MIT). This was done to stay aligned to GNU Octave function file documentation definitions (copyright notice goes after the function synopsis). Additionally, the help command (octave: >> help "function_file_name") is now parsing and displaying the function file documentation correctly.
-- No chages were made to the program logic.
-- Added revision and release history to the README.md file.
-- Minor updates in the text of the README.md file.
-- published/released version 1.1 on the repository of Graz University of Technology; [doi: 10.3217/6qg3m-af058](https://doi.org/10.3217/6qg3m-af058)
+- Moved the copyright notice to the bottom of the function file documentation in all file headers. The license stays the same (MIT). This was done to stay aligned to GNU Octave function file documentation definitions (copyright notice goes after the function synopsis). Additionally, the help command (octave: >> help "function\_file\_name") is now parsing and displaying the function file documentation correctly.   
+- No chages were made to the program logic.   
+- Added revision and release history to the README.md file.   
+- Minor updates in the text of the README.md file.   
+- published/released version 1.1 on the repository of Graz University of Technology; [doi: 10.3217/6qg3m-af058](https://doi.org/10.3217/6qg3m-af058)   
 
 ### 2025-02-05, version 1.2
 
-- Added patch function (see directory "patches", function file "patch\_ts7\_v11.m") to correct incorrect numbers in the binary datasets of test series 7 (reference tests on aluminium cylinder). The license stays the same (MIT).
-- This patch is also available in the [GitHub repository](https://github.com/jakobharden/phd_dataset_compiler).
-- Added revision and release history to the README.md file.
-- published/released version 1.2 on the repository of Graz University of Technology; [doi: 10.3217/bcydt-6ta35](https://doi.org/10.3217/bcydt-6ta35)
+- Added patch function (see directory "patches", function file "patch\_ts7\_v11.m") to correct incorrect numbers in the binary datasets of test series 7 (reference tests on aluminium cylinder). The license stays the same (MIT).   
+- This patch is also available in the [GitHub repository](https://github.com/jakobharden/phd_dataset_compiler).   
+- Added revision and release history to the README.md file.   
+- published/released version 1.2 on the repository of Graz University of Technology; [doi: 10.3217/bcydt-6ta35](https://doi.org/10.3217/bcydt-6ta35)   
+
